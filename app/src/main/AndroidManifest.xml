@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".recyclerview.ListViewActivity"></activity>
+        <activity android:name=".swipetoloadlayout.SwipeToLayoutActivity"></activity>
     </application>
 
 </manifest>

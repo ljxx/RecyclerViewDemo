@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    } //compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
 }
 
 dependencies {
@@ -28,4 +32,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:cardview-v7:25.1.1'
     compile 'com.android.support:recyclerview-v7:25.1.1'
+
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
 }

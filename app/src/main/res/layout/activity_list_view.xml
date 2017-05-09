@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ylx.recyclerviewdemo.ListViewActivity">
+    tools:context="com.ylx.recyclerviewdemo.recyclerview.ListViewActivity">
 
     <TextView
         android:id="@+id/mBack"
@@ -13,11 +13,18 @@
         android:text="返回上一页"/>
 
     <!--android:overScrollMode="never" 去除拉去阴影-->
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/mRecyclerView"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mSwipeRefreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:overScrollMode="never"/>
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 
 </LinearLayout>
